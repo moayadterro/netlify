@@ -1,0 +1,8 @@
+{
+  "connectionString": "mongodb+srv://contentboard:mlIhAImnwHQN50hw@cluster0.md1ta.mongodb.net/appDatabase?retryWrites=true&w=majority",
+  "secret": "2d76e44f-ab24-439e-bd74-8d1344343ad2",
+  "email_service": "gmail",
+  "sender_email": "articleseveryday@gmail.com",
+  "sender_password": "superhack22",
+  "client_url": "https://comfy-pony-74e179.netlify.app"
+}
