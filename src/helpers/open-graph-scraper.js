@@ -1,5 +1,5 @@
 const ogs = require("open-graph-scraper");
-const mql = require("@microlink/mql");
+// const mql = require("@microlink/mql");
 const { getBase64Image } = require("./image-adapter");
 
 function isValidHttpUrl(string) {
@@ -25,15 +25,15 @@ async function getMetaData(url) {
   return ogs(options, async (error, results, response) => {
     if (error) {
       // if there is an error, try to use MQL as a second solution
-      let { data } = await mql(url);
+      // let { data } = await mql(url);
 
-      results = {
-        ogTitle: data.title,
-        ogDescription: data.description,
-        requestUrl: url,
-        ogLocale: data.lang,
-        ogImage: data.image,
-      };
+      // results = {
+      //   ogTitle: data.title,
+      //   ogDescription: data.description,
+      //   requestUrl: url,
+      //   ogLocale: data.lang,
+      //   ogImage: data.image,
+      // };
 
       if (!data) throw error;
     }
